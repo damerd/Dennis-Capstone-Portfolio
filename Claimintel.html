@@ -6,87 +6,39 @@
 <title>ClaimIntel | Damien Dennis</title>
 <style>
 body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f6f8;color:#1f2937;line-height:1.7}
-header{background:#111827;color:white;padding:60px 20px;text-align:center}
-header h1{margin-bottom:8px;font-size:42px}
-header p{max-width:850px;margin:0 auto;font-size:18px}
-nav{background:#374151;padding:15px;text-align:center}
-nav a{color:white;text-decoration:none;margin:0 16px;font-weight:bold}
-nav a:hover{text-decoration:underline}
-.container{max-width:1100px;margin:auto;padding:40px 20px}
-.card{background:white;border-radius:10px;padding:30px;margin-bottom:30px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
-h2{color:#111827;margin-top:0} h3{color:#1f2937;margin-top:26px}
-.badge{display:inline-block;background:#2563eb;color:white;padding:8px 16px;border-radius:20px;font-weight:bold;margin-bottom:20px}
-.feature-grid,.evidence-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.feature,.evidence{background:#eef2ff;padding:20px;border-radius:8px}
-.evidence h3,.feature h3{margin-top:0}
-.button{display:inline-block;background:#111827;color:white;padding:11px 16px;text-decoration:none;border-radius:6px;margin:8px 8px 0 0;font-weight:bold}
-.button:hover{background:#374151}
-.button.secondary{background:#2563eb}.button.secondary:hover{background:#1d4ed8}
-.timeline{border-left:3px solid #d1d5db;padding-left:22px;margin-left:8px}.timeline section{margin-bottom:28px}.timeline section:last-child{margin-bottom:0}
-.outcomes{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.outcome{background:#e5e7eb;padding:7px 11px;border-radius:18px;font-size:14px;font-weight:bold}
-footer{background:#111827;color:white;text-align:center;padding:25px;margin-top:40px}
+header{background:#111827;color:white;padding:60px 20px;text-align:center}header h1{margin-bottom:8px;font-size:42px}header p{max-width:850px;margin:0 auto;font-size:18px}
+nav{background:#374151;padding:15px;text-align:center}nav a{color:white;text-decoration:none;margin:0 16px;font-weight:bold}nav a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:auto;padding:40px 20px}.card{background:white;border-radius:10px;padding:30px;margin-bottom:30px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+h2{color:#111827;margin-top:0}h3{color:#1f2937;margin-top:26px}.badge{display:inline-block;background:#2563eb;color:white;padding:8px 16px;border-radius:20px;font-weight:bold;margin-bottom:20px}
+.feature-grid,.evidence-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}.feature,.evidence{background:#eef2ff;padding:20px;border-radius:8px}.evidence h3,.feature h3{margin-top:0}
+.button{display:inline-block;background:#111827;color:white;padding:11px 16px;text-decoration:none;border-radius:6px;margin:8px 8px 0 0;font-weight:bold}.button:hover{background:#374151}.button.secondary{background:#2563eb}.button.secondary:hover{background:#1d4ed8}.button.download{background:#047857}.button.download:hover{background:#065f46}
+.timeline{border-left:3px solid #d1d5db;padding-left:22px;margin-left:8px}.timeline section{margin-bottom:32px}.timeline section:last-child{margin-bottom:0}.outcomes{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.outcome{background:#e5e7eb;padding:7px 11px;border-radius:18px;font-size:14px;font-weight:bold}
+.callout{background:#ecfdf5;border-left:4px solid #047857;padding:16px 18px;border-radius:6px;margin-top:18px}footer{background:#111827;color:white;text-align:center;padding:25px;margin-top:40px}
 @media(max-width:700px){nav a{display:inline-block;margin:6px 8px}header h1{font-size:34px}}
 </style>
 </head>
 <body>
-<header>
-<h1>ClaimIntel</h1>
-<p>AI-powered claims intelligence and decision-support platform developed and enhanced as my CS 499 Computer Science capstone.</p>
-</header>
-<nav>
-<a href="index.html">Home</a>
-<a href="self-assessment.html">Self-Assessment</a>
-<a href="Claimintel.html">ClaimIntel</a>
-</nav>
+<header><h1>ClaimIntel</h1><p>AI-powered claims intelligence and decision-support platform developed and enhanced as my CS 499 Computer Science capstone.</p></header>
+<nav><a href="index.html">Home</a><a href="self-assessment.html">Self-Assessment</a><a href="Claimintel.html">ClaimIntel</a></nav>
 <div class="container">
-<div class="card">
-<span class="badge">Featured CS 499 Capstone Project</span>
-<h2>Project Overview</h2>
-<p>ClaimIntel is an AI-powered claims intelligence platform designed to help insurance professionals organize claim information, identify missing evidence, evaluate liability and exposure, and generate structured reports that support professional judgment. The goal is decision support, not decision replacement.</p>
-<p>I selected ClaimIntel for my capstone because it gave me the opportunity to combine my professional claims experience with the technical skills I developed throughout the Computer Science program. Instead of creating three unrelated projects, I used one working application and improved it across software design and engineering, algorithms and data structures, and databases.</p>
-<div class="outcomes"><span class="outcome">Software Engineering</span><span class="outcome">Algorithms & Data Structures</span><span class="outcome">Databases</span><span class="outcome">Security</span><span class="outcome">Professional Communication</span></div>
-</div>
-<div class="card">
-<h2>Artifact Access</h2>
-<p>The links below show the progression from the original pre-capstone application to the completed enhanced source code.</p>
-<div class="evidence-grid">
-<div class="evidence"><h3>Original Artifact</h3><p>This repository snapshot is the baseline immediately before the Milestone Two software-engineering enhancement was committed.</p><a class="button" href="https://github.com/damerd/ClaimIntel/tree/d26c9fb3d813e1e996aa56397c8c9d39c5582284" target="_blank" rel="noopener">View Original Code</a></div>
-<div class="evidence"><h3>Enhanced Artifact</h3><p>The current ClaimIntel repository contains the completed capstone enhancements and supporting documentation.</p><a class="button" href="https://github.com/damerd/ClaimIntel" target="_blank" rel="noopener">View Enhanced Code</a></div>
-</div>
-</div>
-<div class="card">
-<h2>Code Review</h2>
-<p>Before implementing the capstone enhancements, I completed an informal code review that walked through ClaimIntel's existing functionality, identified areas for improvement in structure, logic, security, testing, documentation, and maintainability, and explained the enhancement plan across all three categories.</p>
-<a class="button secondary" href="https://www.youtube.com/watch?v=1hClEEKnJmc" target="_blank" rel="noopener">Watch Code Review</a>
-</div>
-<div class="card">
-<h2>Enhancement Progression</h2>
-<div class="timeline">
-<section>
-<h3>1. Software Design & Engineering</h3>
-<p>The first enhancement focused on making ClaimIntel easier to maintain and extend. The original application worked, but too much responsibility was concentrated inside large page components. I separated claim-review orchestration, configuration, document processing, validation, error handling, saved-review operations, and reporting into focused modules and services. The main NewClaimReview page was reduced from roughly 483 lines to about 223 lines, and the application gained a canonical report model so the screen, PDF, Word, text, and clipboard outputs could rely on one source of truth.</p>
-<p>This enhancement also introduced clearer failure states, advisory claim-readiness validation, reusable components, stronger project documentation, and production-build verification. The biggest lesson was that working software is not automatically well-engineered software; structure matters because future changes become much safer when responsibilities are clearly separated.</p>
-<a class="button secondary" href="https://github.com/damerd/ClaimIntel/tree/milestone2-software-engineering" target="_blank" rel="noopener">View Milestone Two Branch</a><a class="button" href="software-engineering-narrative.html">Read Full Narrative</a>
-</section>
-<section>
-<h3>2. Algorithms & Data Structures</h3>
-<p>The second enhancement added a deterministic evidence-validation pipeline so ClaimIntel could evaluate information in a way that was more transparent, repeatable, and testable. The enhancement included normalization and tokenization, an inverted index, evidence matching, detection of missing and unsupported information, deduplication, severity prioritization, weighted readiness scoring, Sets and Maps, and a stable max-priority queue.</p>
-<p>Testing edge cases showed me that visible output is not enough to prove an algorithm is correct. Cases involving duplicate identifiers, conflicting jurisdictions, negative evidence, monetary values, equal-priority ordering, and short input forced me to make the rules more precise. The result was a stronger balance between industry knowledge and software rules that stop when the available evidence does not support a conclusion.</p>
-<a class="button secondary" href="https://github.com/damerd/ClaimIntel/tree/milestone3-algorithms" target="_blank" rel="noopener">View Milestone Three Branch</a><a class="button" href="algorithms-narrative.html">Read Full Narrative</a>
-</section>
-<section>
-<h3>3. Databases</h3>
-<p>The database enhancement moved ClaimIntel beyond storing most information in a single claim-review record. I introduced related data entities for ClaimReview, ClaimAnalysis, ClaimDocument, ClaimReviewHistory, and AuditLog, along with repository and compatibility layers that control how data is written and retrieved.</p>
-<p>The enhanced design includes normalized claim numbers, validation and writable-field controls, version tracking, history records, repository-backed search and filtering, soft deletion and restoration, and sanitized audit metadata. The Saved Reviews and Database History interfaces make these changes visible instead of leaving the database work hidden in the code. I also created a database test script with 13 assertions to verify the behavior.</p>
-<a class="button secondary" href="https://github.com/damerd/ClaimIntel/tree/module4-database" target="_blank" rel="noopener">View Milestone Four Branch</a><a class="button" href="database-narrative.html">Read Full Narrative</a><a class="button" href="https://github.com/damerd/ClaimIntel/blob/main/docs/milestone4-database-design.md" target="_blank" rel="noopener">Database Design Documentation</a>
-</section>
-</div>
-</div>
+<div class="card"><span class="badge">Featured CS 499 Capstone Project</span><h2>Project Overview</h2><p>ClaimIntel is an AI-powered claims intelligence platform designed to help insurance professionals organize claim information, identify missing evidence, evaluate liability and exposure, and generate structured reports that support professional judgment. The goal is decision support, not decision replacement.</p><p>I selected ClaimIntel for my capstone because it gave me the opportunity to combine my professional claims experience with the technical skills I developed throughout the Computer Science program. Instead of creating three unrelated projects, I used one working application and improved it across software design and engineering, algorithms and data structures, and databases.</p><div class="outcomes"><span class="outcome">Software Engineering</span><span class="outcome">Algorithms & Data Structures</span><span class="outcome">Databases</span><span class="outcome">Security</span><span class="outcome">Professional Communication</span></div><div class="callout"><strong>Submitted course files:</strong> The exact Word narratives and technical ZIP packages submitted for the capstone are housed in this portfolio repository and linked below alongside the readable web versions.</div></div>
+
+<div class="card"><h2>Artifact Access</h2><p>The links below show the progression from the original pre-capstone application to the completed enhanced source code. The submitted technical packages are also available directly from this portfolio.</p><div class="evidence-grid"><div class="evidence"><h3>Original Artifact</h3><p>This repository snapshot is the baseline immediately before the Milestone Two software-engineering enhancement was committed.</p><a class="button" href="https://github.com/damerd/ClaimIntel/tree/d26c9fb3d813e1e996aa56397c8c9d39c5582284" target="_blank" rel="noopener">View Original Code</a></div><div class="evidence"><h3>Enhanced Artifact</h3><p>The current ClaimIntel repository contains the completed capstone enhancements and supporting documentation.</p><a class="button" href="https://github.com/damerd/ClaimIntel" target="_blank" rel="noopener">View Enhanced Code</a></div></div></div>
+
+<div class="card"><h2>Code Review</h2><p>Before implementing the capstone enhancements, I completed an informal code review that walked through ClaimIntel's existing functionality, identified areas for improvement in structure, logic, security, testing, documentation, and maintainability, and explained the enhancement plan across all three categories.</p><a class="button secondary" href="https://www.youtube.com/watch?v=1hClEEKnJmc" target="_blank" rel="noopener">Watch Code Review</a></div>
+
+<div class="card"><h2>Enhancement Progression</h2><div class="timeline">
+<section><h3>1. Software Design & Engineering</h3><p>The first enhancement focused on making ClaimIntel easier to maintain and extend. The original application worked, but too much responsibility was concentrated inside large page components. I separated claim-review orchestration, configuration, document processing, validation, error handling, saved-review operations, and reporting into focused modules and services. The main NewClaimReview page was reduced from roughly 483 lines to about 223 lines, and the application gained a canonical report model so the screen, PDF, Word, text, and clipboard outputs could rely on one source of truth.</p><p>This enhancement also introduced clearer failure states, advisory claim-readiness validation, reusable components, stronger project documentation, and production-build verification. The biggest lesson was that working software is not automatically well-engineered software; structure matters because future changes become much safer when responsibilities are clearly separated.</p><a class="button secondary" href="https://github.com/damerd/ClaimIntel/tree/milestone2-software-engineering" target="_blank" rel="noopener">View Milestone Two Branch</a><a class="button" href="software-engineering-narrative.html">Read Narrative Online</a><a class="button download" href="artifacts/ClaimIntel_Narrative.docx">Download Submitted Narrative</a><a class="button download" href="artifacts/ClaimIntel-Code-Package.zip">Download Submitted Technical Artifact</a></section>
+
+<section><h3>2. Algorithms & Data Structures</h3><p>The second enhancement added a deterministic evidence-validation pipeline so ClaimIntel could evaluate information in a way that was more transparent, repeatable, and testable. The enhancement included normalization and tokenization, an inverted index, evidence matching, detection of missing and unsupported information, deduplication, severity prioritization, weighted readiness scoring, Sets and Maps, and a stable max-priority queue.</p><p>Testing edge cases showed me that visible output is not enough to prove an algorithm is correct. Cases involving duplicate identifiers, conflicting jurisdictions, negative evidence, monetary values, equal-priority ordering, and short input forced me to make the rules more precise. The result was a stronger balance between industry knowledge and software rules that stop when the available evidence does not support a conclusion.</p><a class="button secondary" href="https://github.com/damerd/ClaimIntel/tree/milestone3-algorithms" target="_blank" rel="noopener">View Milestone Three Branch</a><a class="button" href="algorithms-narrative.html">Read Narrative Online</a><a class="button download" href="artifacts/Enhancement%20Two.docx">Download Submitted Narrative</a><a class="button download" href="artifacts/Milestone3_Technical_Artifacts.zip">Download Submitted Technical Artifact</a></section>
+
+<section><h3>3. Databases</h3><p>The database enhancement moved ClaimIntel beyond storing most information in a single claim-review record. I introduced related data entities for ClaimReview, ClaimAnalysis, ClaimDocument, ClaimReviewHistory, and AuditLog, along with repository and compatibility layers that control how data is written and retrieved.</p><p>The enhanced design includes normalized claim numbers, validation and writable-field controls, version tracking, history records, repository-backed search and filtering, soft deletion and restoration, and sanitized audit metadata. The Saved Reviews and Database History interfaces make these changes visible instead of leaving the database work hidden in the code. I also created a database test script with 13 assertions to verify the behavior.</p><a class="button secondary" href="https://github.com/damerd/ClaimIntel/tree/module4-database" target="_blank" rel="noopener">View Milestone Four Branch</a><a class="button" href="database-narrative.html">Read Narrative Online</a><a class="button download" href="artifacts/Milestone%204_Enhancement%203.docx">Download Submitted Narrative</a><a class="button download" href="artifacts/Milestone4_Artifact.zip">Download Submitted Technical Artifact</a><a class="button" href="https://github.com/damerd/ClaimIntel/blob/main/docs/milestone4-database-design.md" target="_blank" rel="noopener">Database Design Documentation</a></section>
+</div></div>
+
 <div class="card"><h2>How the Enhancements Fit Together</h2><p>Although each milestone focused on a different computer science category, the improvements are connected. The software-engineering refactor created cleaner boundaries for new functionality. Those boundaries made it easier to introduce deterministic evidence-processing algorithms without burying more logic inside the interface. The database enhancement then provided a stronger way to preserve the structured information and analysis produced by those workflows.</p><p>Together, the enhancements demonstrate how architecture, algorithms, persistence, testing, security, and communication work as parts of one complete computing solution rather than as isolated skills.</p></div>
 <div class="card"><h2>Security and Professional Responsibility</h2><p>ClaimIntel handles information that could be sensitive in a real claims environment, so security was treated as a design concern rather than an afterthought. The enhanced application uses validation, controlled writable fields, user-based record access through the underlying platform, sanitized audit metadata, version history, and soft deletion instead of immediately destroying records.</p><p>The capstone version is an academic and developmental system, not a production-ready platform for regulated insurance data. That distinction matters. A secure development mindset includes recognizing the limits of a system and avoiding claims that the current implementation cannot support.</p></div>
 <div class="card"><h2>Technology & Practices Demonstrated</h2><div class="feature-grid"><div class="feature"><h3>Front End</h3>React, Vite, JavaScript, HTML/CSS, responsive interface design.</div><div class="feature"><h3>Application Design</h3>Modular services, separation of concerns, reusable components, canonical reporting.</div><div class="feature"><h3>Algorithms</h3>Tokenization, indexing, evidence matching, deduplication, weighted scoring, priority queues.</div><div class="feature"><h3>Data</h3>Related entities, repository pattern, versioning, history, controlled persistence, audit records.</div><div class="feature"><h3>Quality</h3>Automated testing, linting, production builds, edge-case validation, iterative debugging.</div><div class="feature"><h3>Security</h3>Input validation, access controls, sensitive-data filtering, auditability, privacy-aware design.</div></div></div>
-<a class="button" href="index.html">← Return to Portfolio</a>
-</div>
+<a class="button" href="index.html">← Return to Portfolio</a></div>
 <footer>© 2026 Damien Dennis | Computer Science Portfolio</footer>
 </body>
 </html>
