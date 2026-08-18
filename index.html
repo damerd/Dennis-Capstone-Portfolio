@@ -4,211 +4,71 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Damien Dennis | Computer Science Portfolio</title>
-
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #1f2937;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #111827;
-      color: white;
-      padding: 70px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    header h2 {
-      font-size: 22px;
-      font-weight: normal;
-      margin-bottom: 20px;
-    }
-
-    header p {
-      max-width: 800px;
-      margin: 0 auto;
-      font-size: 18px;
-    }
-
-    nav {
-      background: #374151;
-      text-align: center;
-      padding: 15px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 18px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 30px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-
-    .card h2 {
-      margin-top: 0;
-      color: #111827;
-    }
-
-    .button {
-      display: inline-block;
-      background: #111827;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 10px;
-      margin-right: 8px;
-    }
-
-    .button:hover {
-      background: #374151;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .skill {
-      background: #e5e7eb;
-      padding: 8px 12px;
-      border-radius: 20px;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 25px;
-      background: #111827;
-      color: white;
-      margin-top: 40px;
-    }
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f6f8;color:#1f2937;line-height:1.6}
+    header{background:#111827;color:white;padding:70px 20px;text-align:center}
+    header h1{font-size:42px;margin-bottom:10px} header h2{font-size:22px;font-weight:normal;margin-bottom:20px}
+    header p{max-width:800px;margin:0 auto;font-size:18px}
+    nav{background:#374151;text-align:center;padding:15px} nav a{color:white;text-decoration:none;margin:0 18px;font-weight:bold} nav a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:auto;padding:40px 20px}.card{background:white;padding:30px;margin-bottom:30px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+    .card h2{margin-top:0;color:#111827}.button{display:inline-block;background:#111827;color:white;padding:12px 18px;border-radius:6px;text-decoration:none;font-weight:bold;margin:10px 8px 0 0}.button:hover{background:#374151}.button.secondary{background:#2563eb}.button.secondary:hover{background:#1d4ed8}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}.skill{background:#e5e7eb;padding:8px 12px;border-radius:20px;font-size:14px;font-weight:bold}
+    footer{text-align:center;padding:25px;background:#111827;color:white;margin-top:40px}
   </style>
 </head>
-
 <body>
+<header>
+  <h1>Damien Dennis</h1>
+  <h2>Computer Science Portfolio</h2>
+  <p>Software engineering, artificial intelligence, and insurance technology focused on building practical tools that improve analysis, decision-making, and operational efficiency.</p>
+</header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="self-assessment.html">Self-Assessment</a>
+  <a href="Claimintel.html">ClaimIntel</a>
+</nav>
+<main class="container">
+  <section class="card">
+    <h2>Professional Self-Assessment</h2>
+    <p>My professional self-assessment introduces my growth throughout the Computer Science program, the skills I developed across software engineering, algorithms, databases, communication, and security, and how those experiences shaped my professional direction.</p>
+    <a class="button" href="self-assessment.html">Read Self-Assessment</a>
+    <a class="button secondary" href="artifacts/Professional%20Self-Assessment.docx">Download Submitted Word Document</a>
+  </section>
 
-  <header>
-    <h1>Damien Dennis</h1>
-    <h2>Computer Science Portfolio</h2>
-    <p>
-      Software engineering, artificial intelligence, and insurance technology focused on building
-      practical tools that improve analysis, decision-making, and operational efficiency.
-    </p>
-  </header>
+  <section class="card">
+    <h2>About This Portfolio</h2>
+    <p>This ePortfolio represents my growth throughout the Computer Science program at Southern New Hampshire University. It highlights my development in software engineering, algorithms and data structures, databases, security, and professional communication.</p>
+    <p>The portfolio is centered around ClaimIntel, an AI-powered insurance claims analysis platform designed to support more consistent, organized, and data-informed claim reviews.</p>
+  </section>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="self-assessment.html">Self-Assessment</a>
-    <a href="Claimintel.html">ClaimIntel</a>
-  </nav>
+  <section class="card">
+    <h2>Featured Capstone Project: ClaimIntel</h2>
+    <p>ClaimIntel is an AI-powered insurance claims analysis platform that reviews claim documents, identifies key facts, analyzes liability and exposure, and generates structured reports for claim professionals.</p>
+    <p>For my CS 499 capstone, I enhanced ClaimIntel in three areas: software engineering and design, algorithms and data structures, and databases. The project page provides the code review, original and enhanced artifacts, readable narratives, and the exact files submitted for each milestone.</p>
+    <a class="button" href="Claimintel.html">View Complete ClaimIntel Capstone</a>
+    <a class="button secondary" href="https://www.youtube.com/watch?v=1hClEEKnJmc" target="_blank" rel="noopener">Watch Code Review</a>
+  </section>
 
-  <main class="container">
+  <section class="card">
+    <h2>Submitted Course Materials</h2>
+    <p>The exact narrative documents and technical artifact packages submitted for the capstone are housed in this GitHub repository. They are also linked within the corresponding sections of the ClaimIntel project page so the portfolio can be reviewed without relying on a raw file listing.</p>
+    <a class="button" href="https://github.com/damerd/Dennis-Capstone-Portfolio/tree/main/artifacts" target="_blank" rel="noopener">View Repository Artifact Folder</a>
+  </section>
 
-    <section class="card">
-      <h2>Professional Self-Assessment</h2>
-      <p>
-        My professional self-assessment introduces my growth throughout the Computer Science program,
-        the skills I developed across software engineering, algorithms, databases, communication, and
-        security, and how those experiences shaped my professional direction.
-      </p>
-      <a class="button" href="self-assessment.html">Read Self-Assessment</a>
-    </section>
+  <section class="card">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <span class="skill">Software Engineering</span><span class="skill">Artificial Intelligence</span><span class="skill">Java</span><span class="skill">Python</span><span class="skill">JavaScript</span><span class="skill">HTML/CSS</span><span class="skill">SQL</span><span class="skill">Database Design</span><span class="skill">Algorithms</span><span class="skill">Data Structures</span><span class="skill">Secure Coding</span><span class="skill">GitHub</span>
+    </div>
+  </section>
 
-    <section class="card">
-      <h2>About This Portfolio</h2>
-      <p>
-        This ePortfolio represents my growth throughout the Computer Science program at
-        Southern New Hampshire University. It highlights my development in software engineering,
-        algorithms and data structures, databases, security, and professional communication.
-      </p>
-      <p>
-        The portfolio is centered around ClaimIntel, an AI-powered insurance claims analysis
-        platform designed to support more consistent, organized, and data-informed claim reviews.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Featured Capstone Project: ClaimIntel</h2>
-      <p>
-        ClaimIntel is an AI-powered insurance claims analysis platform that reviews claim documents,
-        identifies key facts, analyzes liability and exposure, and generates structured reports for
-        claim professionals.
-      </p>
-      <p>
-        For my CS 499 capstone, I enhanced ClaimIntel in three areas: software engineering and
-        design, algorithms and data structures, and databases.
-      </p>
-      <a class="button" href="Claimintel.html">View ClaimIntel</a>
-    </section>
-
-    <section class="card">
-      <h2>Technical Skills</h2>
-      <div class="skills">
-        <span class="skill">Software Engineering</span>
-        <span class="skill">Artificial Intelligence</span>
-        <span class="skill">Java</span>
-        <span class="skill">Python</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">HTML/CSS</span>
-        <span class="skill">SQL</span>
-        <span class="skill">Database Design</span>
-        <span class="skill">Algorithms</span>
-        <span class="skill">Data Structures</span>
-        <span class="skill">Secure Coding</span>
-        <span class="skill">GitHub</span>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>Capstone Enhancement Areas</h2>
-      <p>
-        <strong>Software Engineering and Design:</strong> Improved ClaimIntel’s architecture,
-        usability, reporting workflow, and maintainability.
-      </p>
-      <p>
-        <strong>Algorithms and Data Structures:</strong> Added structured scoring and processing logic
-        for evidence, readiness, prioritization, and analysis.
-      </p>
-      <p>
-        <strong>Databases:</strong> Strengthened persistent storage, data management, history tracking,
-        versioning, and protection of sensitive information.
-      </p>
-    </section>
-
-  </main>
-
-  <footer>
-    <p>© 2026 Damien Dennis | Computer Science Portfolio</p>
-  </footer>
-
+  <section class="card">
+    <h2>Capstone Enhancement Areas</h2>
+    <p><strong>Software Engineering and Design:</strong> Improved ClaimIntel’s architecture, usability, reporting workflow, and maintainability.</p>
+    <p><strong>Algorithms and Data Structures:</strong> Added structured scoring and processing logic for evidence, readiness, prioritization, and analysis.</p>
+    <p><strong>Databases:</strong> Strengthened persistent storage, data management, history tracking, versioning, and protection of sensitive information.</p>
+  </section>
+</main>
+<footer><p>© 2026 Damien Dennis | Computer Science Portfolio</p></footer>
 </body>
 </html>
